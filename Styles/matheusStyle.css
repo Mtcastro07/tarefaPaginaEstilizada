@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  background-color: #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 45px;
+  gap: -15px;
+}
+
+#header h1 {
+  max-width: 50%;
+  height: auto;
+}
+
+#header a {
+  text-decoration: none;
+  color: black;
+}
+
+#PerfilMatheus {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 12px;
+}
+
+#PerfilMatheus p {
+  max-width: 75%;
+  height: auto;
+  text-align: left;
+  margin-right: 100px;
+  padding: 30px;
+}
+
+#PerfilMatheus h2 {
+  max-width: 75%;
+  margin-left: 30px;
+}
+
+#PerfilMatheus img {
+  border-radius: 100%;
+  margin-left: 150px;
+}
+
+.side {
+  padding-left: 600px;
+}
+
+#caracteristicas {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 65px;
+  gap: -20px;
+}
+
+.hobbies,
+.albuns {
+  grid-template-columns: repeat(5, 80px);
+  display: grid;
+  list-style: none;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.albuns {
+  margin-top: 1px;
+}
+
+.hobbie li,
+.album li {
+  width: 100px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.hobbie img,
+.album img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  aspect-ratio: 9/16;
+  border-radius: 5px;
+}
+
+.titulo-hobbie {
+  float: right;
+  font-weight: bold;
+}
+
+.top-titulo {
+  font-weight: bold;
+}
