@@ -9,6 +9,20 @@
     <header id="header">
       <h1>Bem vindo a página do <em>Matheus</em>!</h1>
       <a href="../index.html" class="side">Voltar para a pagina principal</a>
+      <nav class="menu">
+        <div class="dropdown">
+          <button class="menu-btn">
+            <span class="abrir">☰</span>
+            <span class="fechar">✕</span>
+          </button>
+        <ul class="dropdown-content">
+          <li><a href="https://www.linkedin.com/in/matheus-garcia-533a6a218/" target="_blank">Linkedin</a></li>
+          <li><a href="https://github.com/Mtcastro07" target="_blank">Github</a></li>
+          <li><a href="https://www.instagram.com/_castroarchive/" target="_blank">Instagram</a></li>
+          <li><a href="../Contatos/contatoMatheus.html" target="_blank">Entre em contato</a></li>
+        </ul>
+        </div>
+      </nav>
       <br />
     </header>
     <main id="main">
@@ -41,7 +55,7 @@
       <section id="caracteristicas">
         <div>
           <p class="titulo-hobbie">Tenho alguns hobbies, como:</p>
-          <br />
+          
           <ul class="hobbies">
             <li class="hobbie">
               <img src="/Perfils/imagensMatheus/basquete2.jpg" />
@@ -62,52 +76,62 @@
         </div>
         <div>
           <p class="top-titulo">
-            E gosto muito de escutar música, sendo meu top 5 albuns da vida:
+            Gosto de escutar música, sendo meu top 5 albuns:
           </p>
-          <br />
+         
           <ol class="albuns">
-            <li class="album"><img src="/Perfils/imagensMatheus/fb.jpg"></li>
-            <li class="album"><img src="/Perfils/imagensMatheus/gkmd.jpg"></li>
-            <li class="album"><img src="/Perfils/imagensMatheus/igor.jpg"></li>
-            <li class="album"><img src="/Perfils/imagensMatheus/music.png"></li>
-            <li class="album"><img src="/Perfils/imagensMatheus/cmiygl.jpg"></li>
+            <li class="album"><img src="/Perfils/imagensMatheus/fb.jpg"><div class="bloco">1</div></li>
+            
+            <li class="album"><img src="/Perfils/imagensMatheus/gkmd.jpg">            <div class="bloco">2</div>
+</li>
+            <li class="album"><img src="/Perfils/imagensMatheus/igor.jpg">            <div class="bloco">3</div>
+</li>
+            <li class="album"><img src="/Perfils/imagensMatheus/music.png">            <div class="bloco">4</div>
+</li>
+            <li class="album"><img src="/Perfils/imagensMatheus/cmiygl.jpg">            <div class="bloco">5</div>
+</li>
           </ol>
         </div>
       </section>
-      <section>
+      <section class="Feedbacks">
+        <div class="textoFeedbacks">
         <h2>Feedbacks</h2>
-        <form action="https://formspree.io/f/mwvdzbey" method="POST">
+        </div>
+        <div>
+        <form action="https://formspree.io/f/mwvdzbey" method="POST"  class="formulario">
+          <div>
           <label for="Nome">Nome:</label>
+          <br>
           <input
-            placeholder="Seu nome completo"
+            
             type="text"
             name="Nome feedback"
           />
+          </div>
+          
           <br />
-          <label for="feedback">Escreva o feedback da pagina:</label>
-          <textarea placeholder="Feedback" name="Feedback Mensagem"></textarea>
+          <div><label for="feedback">Escreva o feedback da pagina:</label>
+          <br>
+          <textarea  name="Feedback Mensagem"></textarea></div>
           <br />
-          <button type="submit" placeholder="Enviar">Enviar</button>
+          <button type="submit"  class="enviar">Enviar</button>
         </form>
+        </div>
       </section>
     </main>
-    <footer id="footer">
-      <h2>Caso queira saber mais sobre mim, temos os meus contatos:</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/Mtcastro07" target="_blank">Meu github</a>
+    <footer>
+      <ul class="icones">
+        <li class="icone">
+          <a href="https://github.com/Mtcastro07" target="_blank"><img src="/Perfils/imagensMatheus/Github.png"></a>
         </li>
-        <li>
-          <a href="https://www.instagram.com/_castroarchive/" target="_blank"
-            >Meu instagram</a
-          >
+        <li class="icone">
+          <a href="https://www.instagram.com/_castroarchive/" target="_blank"><img src="/Perfils/imagensMatheus/instagram.png"></a>
         </li>
-        <li>
-          <a href="../Contatos/contatoMatheus.html"
-            ><strong>Minha Pagina de contato!</strong></a
-          >
+        <li class="icone">
+          <a href="https://www.linkedin.com/in/matheus-garcia-533a6a218/" target="_blank"><img src="/Perfils/imagensMatheus/linkedin.png"></a>
         </li>
       </ul>
+      <a href="../Contatos/contatoMatheus.html" class="entrarContato" target="_blank">Entre em contato!</a>
     </footer>
   </body>
 </html>
