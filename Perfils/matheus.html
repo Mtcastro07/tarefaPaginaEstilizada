@@ -8,7 +8,12 @@
   <body>
     <header id="header">
       <h1>Bem vindo a página do <em>Matheus</em>!</h1>
-      <a href="../index.html" class="side">Voltar para a pagina principal</a>
+      <div class="navbar">
+        <a>Quem sou eu</a>
+        <a>Hobbies</a>
+        <a href="https://github.com/Mtcastro07" target="_blank">Projetos</a>
+        <a href="../index.html" target="_blank">Voltar para a pagina principal</a>
+      </div>
       <nav class="menu">
         <div class="dropdown">
           <button class="menu-btn">
@@ -52,6 +57,8 @@
       </div>
       </div>
       </section>
+      
+
       <section id="caracteristicas">
         <div>
           <p class="titulo-hobbie">Tenho alguns hobbies, como:</p>
@@ -82,42 +89,75 @@
           <ol class="albuns">
             <li class="album"><img src="/Perfils/imagensMatheus/fb.jpg"><div class="bloco">1</div></li>
             
-            <li class="album"><img src="/Perfils/imagensMatheus/gkmd.jpg">            <div class="bloco">2</div>
+            <li class="album"><img src="/Perfils/imagensMatheus/gkmd.jpg"><div class="bloco">2</div>
 </li>
-            <li class="album"><img src="/Perfils/imagensMatheus/igor.jpg">            <div class="bloco">3</div>
+            <li class="album"><img src="/Perfils/imagensMatheus/igor.jpg"><div class="bloco">3</div>
 </li>
-            <li class="album"><img src="/Perfils/imagensMatheus/music.png">            <div class="bloco">4</div>
+            <li class="album"><img src="/Perfils/imagensMatheus/music.png"><div class="bloco">4</div>
 </li>
-            <li class="album"><img src="/Perfils/imagensMatheus/cmiygl.jpg">            <div class="bloco">5</div>
+            <li class="album"><img src="/Perfils/imagensMatheus/cmiygl.jpg"><div class="bloco">5</div>
 </li>
           </ol>
         </div>
       </section>
-      <section class="Feedbacks">
+      <section class="projetos">
+        <div class="imagem-titulo-projeto">
+        <img src="/Perfils/imagensMatheus/projeto.png">
+        <h2>Catalogo de filmes</h2>
+        <h4>Plataforma copia do imdb</h4>
+        </div>
+        <div class="descricao-projeto">
+          <h2>Descrição:</h2>
+          <p>Este projeto foi desenvolvido como trabalho final da disciplina de Desenvolvimento Web do Instituto Federal do Rio de Janeiro (IFRJ) e consiste em um catálogo de filmes inspirado em plataformas como o IMDb. A aplicação foi construída com React no frontend, utilizando componentes reutilizáveis e uma interface dinâmica, enquanto o Supabase foi empregado para o gerenciamento e armazenamento dos dados. O projeto permitiu aplicar na prática conceitos de desenvolvimento web moderno, integração entre frontend e backend.
+</p>
+          <div class="metodologia-projeto">
+            <h2>Metodologia:</h2>
+            <p>Durante o desenvolvimento do projeto, foi adotada uma abordagem baseada em componentes utilizando React, permitindo a criação de uma interface organizada, reutilizável e de fácil manutenção. Para o armazenamento e gerenciamento dos dados da aplicação, foi utilizado o Supabase, enquanto a obtenção das informações dos filmes, como títulos, sinopses, avaliações e pôsteres, foi realizada por meio da API do TMDB (The Movie Database). A integração dessas tecnologias possibilitou a construção de uma aplicação dinâmica, responsiva e alinhada às práticas atuais do desenvolvimento web.
+            </p>
+          </div>
+        </div>
+        
+      </section>
+      <section class="sectionFeedbacks">
+        <div class="Feedbacks">
         <div class="textoFeedbacks">
         <h2>Feedbacks</h2>
+        <p>Toda crítica construtiva, elogio ou ideia é bem-vinda e me ajuda a evoluir como desenvolvedor. Reserve alguns instantes para compartilhar sua opinião no formulário abaixo. Obrigado pela sua contribuição!</p>
         </div>
-        <div>
+        
         <form action="https://formspree.io/f/mwvdzbey" method="POST"  class="formulario">
           <div>
           <label for="Nome">Nome:</label>
           <br>
           <input
-            
+            class="inputi"
             type="text"
             name="Nome feedback"
           />
-          </div>
           
+          <br>
+          <div>
+            <label>Assunto:</label>
+            <br>
+            <input class="inputi" type="text">
+          </div>
           <br />
           <div><label for="feedback">Escreva o feedback da pagina:</label>
           <br>
-          <textarea  name="Feedback Mensagem"></textarea></div>
+          </div>
+          <div>
+          <textarea  name="Feedback Mensagem"></textarea>
           <br />
+          
+          <div class="enviarButton">
           <button type="submit"  class="enviar">Enviar</button>
+          </div>
+          </div>
         </form>
         </div>
-      </section>
+        </section>
+        </div>
+      
     </main>
     <footer>
       <ul class="icones">

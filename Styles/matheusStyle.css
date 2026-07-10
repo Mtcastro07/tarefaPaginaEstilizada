@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Alata", sans-serif;
+  background-color: #000000;
 }
 
 .menu {
@@ -19,29 +20,37 @@ body {
 }
 
 #header {
-  background-color: #c4c4c4;
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 45px;
+  padding: 20px 30px 20px 30px;
+  gap: 10px;
 }
 
 #header h1 {
   max-width: 50%;
   height: auto;
+  color: white;
 }
 
-#header a {
+.navbar a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.navbar {
+  display: flex;
+  gap: 40px;
   margin-left: auto;
+  margin-right: 10px;
 }
 
 @media (max-width: 768px) {
   #header h1 {
     font-size: 20px;
   }
-  .side {
+  .navbar {
     display: none;
   }
   .menu {
@@ -50,8 +59,8 @@ body {
   }
   .menu-btn {
     cursor: pointer;
-    background-color: #c4c4c4;
-    color: rgb(0, 0, 0);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     border: none;
     font-size: 40px;
     margin-left: 200px;
@@ -99,6 +108,7 @@ body {
     padding: 10px;
     text-decoration: none;
     color: white;
+    background-color: #000000;
   }
   .dropdown:hover .dropdown-content {
     display: block;
@@ -106,12 +116,12 @@ body {
 }
 
 #PerfilMatheus {
-  background-color: #f3f3f3;
+  background-color: #ff0000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 30px 0px 30px 0px;
   gap: 30px;
-  padding: 50px 12px;
 }
 
 #PerfilMatheus p {
@@ -120,11 +130,13 @@ body {
   text-align: left;
   margin-right: 100px;
   padding: 30px;
+  color: white;
 }
 
 #PerfilMatheus h2 {
   max-width: 75%;
   margin-left: 30px;
+  color: white;
 }
 
 #PerfilMatheus img {
@@ -153,8 +165,12 @@ body {
 #caracteristicas {
   display: flex;
   justify-content: center;
-  padding: 20px 65px;
-  gap: 60px;
+  align-items: center;
+  padding: 50px 0px 70px 0px;
+  gap: 80px;
+  color: #ff0000;
+  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 
 .hobbies,
@@ -206,8 +222,8 @@ body {
 
 .bloco {
   position: absolute;
-  background-color: #c4c4c4;
-  color: black;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   top: 0%;
   border-radius: 0px 0px 2.5px 2.5px;
   font-size: 10px;
@@ -222,18 +238,26 @@ body {
   #caracteristicas {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
     justify-content: center;
+  }
+
+  .titulo-hobbie {
+    margin-left: 0;
+    padding-right: 177px;
   }
 
   .titulo-hobbie,
   .top-titulo {
-    margin-left: 0;
-    text-align: left;
     font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 
   .top-titulo {
     margin-bottom: 22px;
+    margin-left: 22px;
   }
 
   .albuns,
@@ -268,71 +292,120 @@ body {
 
 .Feedbacks {
   display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  padding: 0px 150px 50px 150px;
+  background-color: black;
+  color: red;
 }
 
 .textoFeedbacks {
   text-align: left;
   display: flex;
+  flex-direction: column;
   margin-right: 120px;
+  max-width: 300px;
+  width: 100%;
+  padding-bottom: 150px;
 }
 
 .Feedbacks h2 {
   padding-right: 220px;
+  padding-bottom: 32px;
 }
 
-.formulario {
+.enviarButton {
+  justify-content: right;
+  align-items: end;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  width: 100%;
 }
+
 .enviar {
-  width: 70px;
-  height: 25px;
-  margin-left: auto;
-  background-color: #979797;
+  width: 95px;
+  height: 28px;
+  margin-top: 10px;
+  background-color: #ff0000;
   border-radius: 5px;
   border: none;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 .enviar:hover {
-  background-color: #2b2b2b;
+  background-color: #ff8383;
 }
 
-input {
-  width: 400px;
-  height: 20px;
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 300%;
+}
+
+.formulario input {
+  height: 35px;
   margin-top: 10px;
-  background-color: #dddddd;
+  background-color: #ff5454;
   border: none;
   border-radius: 5px;
+  width: 100%;
+  max-width: 750px;
 }
 textarea {
   margin-top: 10px;
-  width: 400px;
   height: 100px;
+  width: 100%;
+  max-width: 750px;
   text-decoration: none;
-  background-color: #dddddd;
+  background-color: #ff5454;
   border: none;
   border-radius: 5px;
+}
+
+.sectionFeedbacks {
+  background-color: black;
 }
 
 @media (max-width: 768px) {
   .Feedbacks {
     display: grid;
     justify-content: center;
-    margin-right: 0;
+    align-items: center;
+    margin-right: 40px;
     margin-left: 40px;
+  }
+
+  .textoFeedbacks {
+    margin-bottom: -100px;
+  }
+  .formulario input,
+  textarea {
+    width: 110%;
+  }
+
+  .enviarButton {
+    width: 125%;
+  }
+
+  .formulario {
+    margin: 0px;
+    width: 100%;
   }
 
   .enviar {
     margin-right: 60px;
+    width: 80px;
   }
   .Feedbacks input {
     height: 23;
@@ -343,19 +416,19 @@ textarea {
 }
 
 footer {
-  background-color: #c4c4c4;
-  justify-content: center;
+  background-color: #ffffff;
   display: flex;
-  gap: 900px;
-  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 120px 18px 120px;
 }
 
 .entrarContato {
   margin-top: 10px;
   align-items: center;
-  background-color: #dfdfdf;
+  background-color: #000000;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   width: 150px;
@@ -364,7 +437,7 @@ footer {
 }
 
 .entrarContato:hover {
-  background-color: #a0a0a0;
+  background-color: #797979;
 }
 
 .icones {
@@ -394,15 +467,73 @@ footer {
   footer {
     display: grid;
     gap: 40px;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
   }
   .entrarContato {
     order: 1;
     width: 150px;
     height: 40px;
+    margin-left: 12.5px;
   }
   .icones {
     order: 2;
+  }
+}
+
+.projetos {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0px 180px 50px 150px;
+  padding-top: 40px;
+  background-color: #000000;
+  color: red;
+}
+
+.projetos img {
+  aspect-ratio: 4/3;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.descricao-projeto h2 {
+  padding-bottom: 20px;
+}
+
+.descricao-projeto p {
+  max-width: 900px;
+  width: 100%;
+  margin-right: 80px;
+}
+
+.metodologia-projeto {
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .projetos {
+    display: grid;
+    padding-left: 160px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagem-titulo-projeto {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .projetos img {
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .descricao-projeto p {
+    max-width: 350px;
+    width: 100%;
   }
 }
